@@ -21,7 +21,7 @@ public class PointsAndRectangles {
        rec.setFrame(a,b);
        System.out.println(a);
         System.out.println(b);
-        System.out.print(rec );
+        System.out.print(rec);
 
     }
 
