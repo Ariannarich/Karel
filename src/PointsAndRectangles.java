@@ -11,13 +11,14 @@ public class PointsAndRectangles {
         int x = input.nextInt();
         System.out.print("Enter the y coordinate: ");
         int y = input.nextInt();
+
         Point a = new Point(x, y);
  System.out.print("Enter the width: ");
  int w = input.nextInt();
         System.out.print("Enter the length: ");
         int l = input.nextInt();
          Dimension b = new Dimension(w,l);
-         Rectangle2D rec = new Rectangle();
+         Rectangle rec = new Rectangle();
        rec.setFrame(a,b);
        System.out.println(a);
         System.out.println(b);

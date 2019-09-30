@@ -6,23 +6,24 @@ public class RectangleFun {
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        Rectangle2D rec = new Rectangle();
 
         System.out.print("Width: ");
-     double w = input.nextInt();
+     int w = input.nextInt();
         System.out.print("Height: ");
-     double h = input.nextInt();
+   int h = input.nextInt();
         System.out.print("X: ");
-       double x = input.nextInt();
+       int x = input.nextInt();
         System.out.print("Y: ");
-      double y = input.nextInt();
-   w = rec.getWidth();
-   h = rec.getHeight();
+      int y = input.nextInt();
+        Rectangle2D rec = new Rectangle(x,y,h,w);
+   w = (int) rec.getWidth();
+   h = (int) rec.getHeight();
 
-   System.out.println("Perimeter =  " + 2 * rec.getHeight() + 2 * rec.getWidth());
+
+   System.out.println("Perimeter =  " + (2 * w + 2 * h));
    rec.setRect(x - 4, y + 2, w, h);
-    x = rec.getX();
-    y = rec.getY();
+    x = (int) rec.getX();
+    y = (int) rec.getY();
         System.out.print("New location is: ");
         System.out.print("(");
         System.out.print(x);
