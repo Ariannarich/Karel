@@ -8,23 +8,24 @@ public class FourRectanglePrinter
             double x= 0;
             double y= 0;
             double w = 2;
-            double h= 2;
+            double h= -2;
 
-            Rectangle2D box = new Rectangle();
+            Rectangle box = new Rectangle();
 
     box.setRect(x, y, w,h);
 
 
-    Rectangle2D box2 = new Rectangle();
-            box2.setRect(x + 2, y + 2, w, h);
-            Rectangle2D box3 = new Rectangle();
-            box3.setRect(x += 2, y-=2, w, h );
-            Rectangle2D box4 = new Rectangle();
-            box4.setRect(x, y, w, h );
+
+            box.translate(0,0);
             System.out.println(box);
-            System.out.println(box2);
-            System.out.println(box3);
-            System.out.println(box4);
+            box.translate(2,0);
+            System.out.println(box);
+            box.translate(-2,-2);
+            System.out.println(box);
+            box.translate(2,0);
+            System.out.println(box);
+
+
 
 
 
