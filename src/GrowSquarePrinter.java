@@ -6,7 +6,7 @@ public class GrowSquarePrinter {
         square.setRect(100, 100, 50, 50);
         System.out.println(square);
         square.grow(25,25);
-        square.translate(50,50);
-        System.out.println(square);
+        square.translate(25,25);
+        System.out.println("New:" + square);
     }
 }
