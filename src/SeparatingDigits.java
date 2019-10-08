@@ -1,11 +1,28 @@
-public class SeparatingDigits {
+import java.util.Scanner;
+
+public class SeparatingDigits
+{
     public static void main(String[] args) {
-        int num = 4562 / 1000;
+        Scanner input = new Scanner(System.in);
+        int num = input.nextInt();
+        int num2 = quotient(num);
+        int num3 = remainder(num2);
+    }
+    static int quotient(int a ) {
+    {
+      a = a / 10;
+      return a;
 
-        System.out.println(num % 1000);
-        double num2 = 4562 / 1000;
+   }
+    static int remainder(int b) {
+    {
+       b = b % 10;
+       return b;
 
-        System.out.println(num2 % 1000);
+    }
+    public static void main(String[] args) {
+
+
 
     }
 }
