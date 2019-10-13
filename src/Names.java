@@ -15,14 +15,14 @@ Names {
         String l= last.substring(0,1);
         int half = first.length() /2;
         int half2 = last.length() / 2;
-        String lh = last.substring(2);
+        System.out.println(first+"  " + last);
         System.out.println(tot);
         System.out.println(f+l);
         System.out.println(first.compareTo(last));
         System.out.println(last.lastIndexOf(first));
         System.out.println(first.lastIndexOf(last));
-        System.out.print(first.substring(0, half2) + lh);
-        System.out.println("  " + last.substring(0, half) + first.substring(2));
+        System.out.print(first.substring(0,half) + last.substring(half2));
+        System.out.println("  " + last.substring(0,half2) + first.substring(half));
 
 
 
