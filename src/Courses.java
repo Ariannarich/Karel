@@ -5,7 +5,9 @@ public class Courses {
         Scanner input = new Scanner(System.in);
         String title = input.next();
         int titleLength = title.indexOf(title);
-        int department = title.indexOf(titleLength, 0);
+        char space1 = ' ';
+        int department = title.indexOf(space1, 1);
+        System.out.println(title.substring(department));
 
 
     }
