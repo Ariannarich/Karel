@@ -1,5 +1,4 @@
 import java.awt.*;
-import java.awt.geom.Rectangle2D;
 import java.util.Scanner;
 
 public class RectangleFun {
@@ -15,12 +14,12 @@ public class RectangleFun {
        int x = input.nextInt();
         System.out.print("Y: ");
       int y = input.nextInt();
-        Rectangle2D rec = new Rectangle(x,y,h,w);
-   w = (int) rec.getWidth();
+        Rectangle rec = new Rectangle(x,y,h,w);
+   w = (int) rec.getWidth(); // Here were the getHeight and Width programs.
    h = (int) rec.getHeight();
 
 
-   System.out.println("Perimeter =  " + (2 * w + 2 * h));
+   System.out.println("Perimeter =  " + (2 * w + 2 * h)); // here is where i used it for the perimeter
    rec.setRect(x - 4, y + 2, w, h);
     x = (int) rec.getX();
     y = (int) rec.getY();
